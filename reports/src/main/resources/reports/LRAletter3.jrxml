@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1fba1dc3-ea31-4045-9ef4-c34a9b75361b">
+	<property name="ireport.zoom" value="0.8264462809917362"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+			<style backcolor="#EFF7FF"/>
+		</conditionalStyle>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+			<style backcolor="#EFF7FF"/>
+		</conditionalStyle>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[new Boolean($V{REPORT_COUNT}.intValue()%2==0)]]></conditionExpression>
+			<style backcolor="#EFF7FF"/>
+		</conditionalStyle>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="dataset1" uuid="e002ac8b-e8d9-4335-9a8b-3de13277db88">
+		<queryString language="SQL">
+			<![CDATA[]]>
+		</queryString>
+		<field name="nameFirstpart" class="java.lang.String">
+			<fieldDescription><![CDATA[nameFirstpart]]></fieldDescription>
+		</field>
+		<field name="nameLastpart" class="java.lang.String">
+			<fieldDescription><![CDATA[nameLastpart]]></fieldDescription>
+		</field>
+		<field name="cadastreObjectType" class="java.lang.String">
+			<fieldDescription><![CDATA[cadastreObjectType.displayValue]]></fieldDescription>
+		</field>
+		<field name="sourceReference" class="java.lang.String">
+			<fieldDescription><![CDATA[sourceReference]]></fieldDescription>
+		</field>
+		<field name="status" class="java.lang.String">
+			<fieldDescription><![CDATA[status.displayValue]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="Rights" uuid="58b1a481-e55d-4ec1-bb94-3a4106e0c5fc">
+		<field name="rrrType" class="java.lang.String">
+			<fieldDescription><![CDATA[rrrType.displayValue]]></fieldDescription>
+		</field>
+		<field name="registrationDate" class="java.util.Date">
+			<fieldDescription><![CDATA[registrationDate]]></fieldDescription>
+		</field>
+		<field name="status" class="java.lang.String">
+			<fieldDescription><![CDATA[status.displayValue]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="Ownership" uuid="94643500-1b24-43ca-b08c-d7dd462f00d7">
+		<field name="Owners" class="java.lang.String">
+			<fieldDescription><![CDATA[rrrShare.rightHoldersStringList]]></fieldDescription>
+		</field>
+		<field name="Share" class="java.lang.String">
+			<fieldDescription><![CDATA[rrrShare.share]]></fieldDescription>
+		</field>
+		<field name="Status" class="java.lang.String">
+			<fieldDescription><![CDATA[status]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="Notations" uuid="ff3374a3-9a1c-414a-96b5-568bbb7bbc3c">
+		<field name="Ref. Number" class="java.lang.String">
+			<fieldDescription><![CDATA[referenceNr]]></fieldDescription>
+		</field>
+		<field name="Notation Text" class="java.lang.String">
+			<fieldDescription><![CDATA[notationText]]></fieldDescription>
+		</field>
+		<field name="Status" class="java.lang.String">
+			<fieldDescription><![CDATA[status.displayValue]]></fieldDescription>
+		</field>
+	</subDataset>
+	<subDataset name="dataset2" uuid="7d4fe13b-9d85-4977-a85b-532369d47d61"/>
+	<parameter name="USER" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="baUnitType" class="org.sola.clients.beans.referencedata.BaUnitTypeBean">
+		<fieldDescription><![CDATA[baUnitType]]></fieldDescription>
+	</field>
+	<field name="cadastreObjectFilteredList" class="org.jdesktop.observablecollections.ObservableList">
+		<fieldDescription><![CDATA[cadastreObjectFilteredList]]></fieldDescription>
+	</field>
+	<field name="estateType" class="java.lang.String">
+		<fieldDescription><![CDATA[estateType]]></fieldDescription>
+	</field>
+	<field name="filteredSourceList" class="org.jdesktop.observablecollections.ObservableList">
+		<fieldDescription><![CDATA[filteredSourceList]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
+	<field name="nameFirstpart" class="java.lang.String">
+		<fieldDescription><![CDATA[nameFirstpart]]></fieldDescription>
+	</field>
+	<field name="nameLastpart" class="java.lang.String">
+		<fieldDescription><![CDATA[nameLastpart]]></fieldDescription>
+	</field>
+	<field name="rrrFilteredList" class="org.jdesktop.observablecollections.ObservableList">
+		<fieldDescription><![CDATA[rrrFilteredList]]></fieldDescription>
+	</field>
+	<field name="status" class="org.sola.clients.beans.referencedata.RegistrationStatusTypeBean">
+		<fieldDescription><![CDATA[status]]></fieldDescription>
+	</field>
+	<field name="rrrSharesList" class="org.jdesktop.observablecollections.ObservableList">
+		<fieldDescription><![CDATA[rrrSharesList]]></fieldDescription>
+	</field>
+	<field name="allBaUnitNotationList" class="org.jdesktop.observablecollections.ObservableList">
+		<fieldDescription><![CDATA[allBaUnitNotationList]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="159" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="3" width="151" height="153" uuid="22926019-1719-41d5-82e2-f3b93ba1f347"/>
+				<imageExpression><![CDATA["C:\\Users\\Hamish\\Desktop\\Hamish\\utils\\LRA_logo.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="187" y="3" width="368" height="153" uuid="baa9dd07-6ca6-488a-994a-9245a2c84c7a"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[ 
+Land Registration Authority
+P.O. Box 3215
+4th Floor MIDB Bldg., Rm. 406/407
+Majuro, Republic of the Marshall Islands  96960
+Telephone: 625-2045; Phone/Fax: 625-7171 
+]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="315" splitType="Stretch">
+			<staticText>
+				<reportElement x="342" y="0" width="113" height="17" uuid="1ad312f6-b9c9-42b6-8c73-c88b8de0bb0f"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Application	]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="455" y="1" width="100" height="20" uuid="59e22813-72b5-4182-96f2-760ce6cfdf36"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[appNo]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="32" width="161" height="17" uuid="365cbcba-5d43-4b1d-b2a7-2db3c896dec8"/>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Person to be Notified]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="144" width="115" height="20" uuid="05cb5a1c-765d-4ef2-b115-38a635e97f1b"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[wetoName]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="115" y="144" width="75" height="20" uuid="839b2de7-fab7-4263-bf00-0ec77e2de9c9"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[weto, ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="190" y="144" width="132" height="20" uuid="fc3d73f7-971f-4c22-9a25-cf9959cf3539"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[islandName]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="397" y="144" width="101" height="20" uuid="38647868-f5dd-4339-81c1-e4f1961946ee"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[atollName]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="498" y="144" width="57" height="20" uuid="0a70f0a3-cdfa-4d55-bef4-15f873daf526"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Atoll.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="179" width="555" height="36" uuid="e99150d2-cfca-448e-b10a-216fb8ae2855"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[I am writing to inform you that your objection to the above mentioned application has been rejected for the following reasons:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="322" y="144" width="75" height="20" uuid="6a4810c0-e49e-4929-8076-3dda4e41941b"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Island, ]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement x="0" y="1" width="204" height="20" uuid="7f11633e-becd-4fa9-889d-13a7d723b4bd"/>
+				<textElement>
+					<font fontName="Tahoma" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="49" width="342" height="17" uuid="97fc40a4-f803-43eb-850b-d231b9518db0"/>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Address Line 1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="66" width="342" height="17" uuid="5013d563-fa6a-4ec9-a995-c1f2720cdaaa"/>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Address Line 2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="83" width="342" height="17" uuid="5764a7ba-d19c-46eb-bd59-5ec3fc69159e"/>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Address Line 3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="110" width="161" height="17" uuid="aefe043a-a013-4fc0-9403-1ecc187b5391"/>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Dear Person to be Notified]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="367" y="127" width="79" height="17" uuid="2dafb82b-e98f-47a9-b606-f4ff164f6d08"/>
+				<textElement textAlignment="Left">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ Interest]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="127" width="265" height="17" uuid="7d111389-cb13-481b-ad43-920a65963578"/>
+				<textElement textAlignment="Left">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Objection to Application for Registration ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="265" y="127" width="98" height="17" uuid="9db54581-3c3b-4d66-aeb7-42130d138e6f"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[interestType]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="81" y="226" width="474" height="19" uuid="79bb5b5f-f53b-4ab8-bda3-d7c1e2fa1649"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Your objection was received after the closing date for objections]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="81" y="255" width="474" height="36" uuid="7dc11a57-ec5e-49d1-9321-0f80885923e4"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Your objection failed to present any supporting details to show that you were the holder of an interest in the affected land.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="255" width="20" height="19" uuid="79a55b86-3917-420b-9c47-45678e08fdbc"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="226" width="20" height="19" uuid="6b205fd1-ffd3-4d2d-9cc1-3894255062ec"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="95" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="75" width="61" height="20" uuid="5e3a177a-83e0-474c-9d22-c49f3ea91e72"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Registrar]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement x="435" y="0" width="80" height="20" uuid="fa859e0e-fac8-468d-b923-db1349338487"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="515" y="0" width="40" height="20" uuid="624ff72f-d7b6-4076-9155-19aa1045b990"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

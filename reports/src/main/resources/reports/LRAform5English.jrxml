@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1fba1dc3-ea31-4045-9ef4-c34a9b75361b">
 	<property name="ireport.zoom" value="0.9090909090909098"/>
-	<property name="ireport.x" value="8"/>
-	<property name="ireport.y" value="206"/>
+	<property name="ireport.x" value="51"/>
+	<property name="ireport.y" value="23"/>
 	<style name="table">
 		<box>
 			<pen lineWidth="1.0" lineColor="#000000"/>
@@ -227,7 +227,7 @@
 				<textElement textAlignment="Center">
 					<font size="22" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Certificate of Registration]]></text>
+				<text><![CDATA[Notice of Registration Application]]></text>
 			</staticText>
 			<image>
 				<reportElement x="0" y="0" width="151" height="76" uuid="4062dfdc-6ed0-404c-b825-fc7643220044"/>
@@ -249,7 +249,7 @@
 		<band splitType="Stretch"/>
 	</columnHeader>
 	<detail>
-		<band height="524" splitType="Stretch">
+		<band height="532" splitType="Stretch">
 			<line>
 				<reportElement x="0" y="0" width="555" height="1" forecolor="#006666" uuid="2b8d9df4-7953-4452-bdad-e429967eaa02"/>
 				<graphicElement>
@@ -261,331 +261,266 @@
 				<textElement>
 					<font size="12"/>
 				</textElement>
-				<text><![CDATA[Certificate Number:]]></text>
+				<text><![CDATA[Application Number]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="455" y="1" width="100" height="20" uuid="59e22813-72b5-4182-96f2-760ce6cfdf36"/>
 				<textElement>
 					<font isBold="true" isItalic="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[certNO]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="393" y="21" width="62" height="20" uuid="bccd4cc7-352b-41a1-9e8b-2d445d6e72b3"/>
-				<textElement>
-					<font isBold="true" isItalic="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[oldLabel]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="455" y="21" width="100" height="20" uuid="43012fec-5b99-45b9-bb30-745694c0f639"/>
-				<textElement>
-					<font isBold="true" isItalic="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[oldCertNO]]></textFieldExpression>
+				<textFieldExpression><![CDATA[appNO]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="0" y="41" width="555" height="20" uuid="e08cb199-f2d7-4406-9eb8-44f24a20e300"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="12" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Certificate of Registration]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="0" y="61" width="555" height="33" uuid="365cbcba-5d43-4b1d-b2a7-2db3c896dec8"/>
+				<reportElement x="0" y="40" width="555" height="16" uuid="365cbcba-5d43-4b1d-b2a7-2db3c896dec8"/>
 				<textElement textAlignment="Center">
 					<font size="12"/>
 				</textElement>
-				<text><![CDATA[This certificate is issued under Part V of the Land Recording and Registration Act  2003
-and certifies the registration of the ownership land interests in :
-]]></text>
+				<text><![CDATA[This notice is issued under Part V of the Land Recording and Registration Act  2003and gives notice that ]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="0" y="94" width="100" height="20" uuid="ccfd37e7-c47b-4c6f-856d-c2e2a4b1f05e"/>
+				<reportElement x="424" y="56" width="131" height="20" uuid="ccfd37e7-c47b-4c6f-856d-c2e2a4b1f05e"/>
 				<textElement>
 					<font size="12" isBold="true" isItalic="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[wetoPortion]]></textFieldExpression>
 			</textField>
-			<staticText>
-				<reportElement x="0" y="114" width="72" height="20" uuid="75585717-5dce-47c3-859a-cb207c1fb2f0"/>
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[being part of]]></text>
-			</staticText>
 			<textField>
-				<reportElement x="72" y="114" width="115" height="20" uuid="05cb5a1c-765d-4ef2-b115-38a635e97f1b"/>
+				<reportElement x="85" y="76" width="102" height="20" uuid="05cb5a1c-765d-4ef2-b115-38a635e97f1b"/>
 				<textElement>
 					<font size="12" isBold="true" isItalic="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[wetoName]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="187" y="114" width="75" height="20" uuid="839b2de7-fab7-4263-bf00-0ec77e2de9c9"/>
+				<reportElement x="187" y="76" width="44" height="20" uuid="839b2de7-fab7-4263-bf00-0ec77e2de9c9"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<text><![CDATA[weto,]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="262" y="114" width="98" height="20" uuid="fc3d73f7-971f-4c22-9a25-cf9959cf3539"/>
-				<textElement>
+				<reportElement x="231" y="76" width="111" height="20" uuid="fc3d73f7-971f-4c22-9a25-cf9959cf3539"/>
+				<textElement textAlignment="Right">
 					<font size="12" isBold="true" isItalic="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[islandName]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="438" y="114" width="60" height="20" uuid="38647868-f5dd-4339-81c1-e4f1961946ee"/>
+				<reportElement x="406" y="76" width="89" height="20" uuid="38647868-f5dd-4339-81c1-e4f1961946ee"/>
 				<textElement>
 					<font size="12" isBold="true" isItalic="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[atollName]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="498" y="114" width="57" height="20" uuid="0a70f0a3-cdfa-4d55-bef4-15f873daf526"/>
+				<reportElement x="495" y="76" width="60" height="20" uuid="0a70f0a3-cdfa-4d55-bef4-15f873daf526"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<text><![CDATA[Atoll]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="144" width="324" height="22" uuid="923c6b29-3914-4eba-b6c5-ef5e8d9a4daa"/>
+				<reportElement x="0" y="106" width="324" height="22" uuid="923c6b29-3914-4eba-b6c5-ef5e8d9a4daa"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<text><![CDATA[The land subject to this certificate is defined on Survey Map ]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="324" y="144" width="231" height="20" uuid="fa0041ad-fb79-4740-9061-77c9820777f3"/>
+				<reportElement x="324" y="106" width="231" height="20" uuid="fa0041ad-fb79-4740-9061-77c9820777f3"/>
 				<textElement>
 					<font size="12" isBold="true" isItalic="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[surveyMap]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="0" y="166" width="555" height="20" uuid="e99150d2-cfca-448e-b10a-216fb8ae2855"/>
+				<reportElement x="0" y="126" width="555" height="20" uuid="e99150d2-cfca-448e-b10a-216fb8ae2855"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<text><![CDATA[which is filed in the Office of the Division of Lands and Survey, Ministry of Internal Affairs.]]></text>
 			</staticText>
-			<textField>
-				<reportElement x="0" y="218" width="555" height="20" uuid="a3309d01-a508-43f9-8fff-415c869c8502"/>
-				<textElement>
-					<font size="12" isBold="true" isItalic="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[MetesAndBounds]]></textFieldExpression>
-			</textField>
 			<staticText>
-				<reportElement x="0" y="238" width="231" height="20" uuid="7adf1101-cc49-489b-b250-7ddc15e4412f"/>
+				<reportElement x="0" y="146" width="231" height="20" uuid="7adf1101-cc49-489b-b250-7ddc15e4412f"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<text><![CDATA[The total land area of this portion of land is]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="342" y="238" width="135" height="20" uuid="8f7a6fe4-e5a2-410c-bbaa-7489e0ee6e8f"/>
-				<textElement>
+				<reportElement x="231" y="146" width="246" height="20" uuid="8f7a6fe4-e5a2-410c-bbaa-7489e0ee6e8f"/>
+				<textElement textAlignment="Right">
 					<font size="12" isBold="true" isItalic="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[areaHectares]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="477" y="238" width="78" height="20" uuid="e7d90ee7-fc9b-44f7-a394-5f9a1f460c23"/>
+				<reportElement x="477" y="146" width="78" height="20" uuid="e7d90ee7-fc9b-44f7-a394-5f9a1f460c23"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<text><![CDATA[Hectares]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="268" width="555" height="23" uuid="3c53cd23-9d6a-41fb-956f-e9930211516e"/>
+				<reportElement x="0" y="195" width="555" height="21" uuid="2f74214b-8816-4e8d-89ce-c94423e65fb3"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
-				<text><![CDATA[The ownership interests described on this certificate have previously been described on ]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="23" y="291" width="62" height="20" uuid="001c6c74-00ae-425c-ab1b-36f430c162f9"/>
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[Certificate]]></text>
+				<text><![CDATA[The parties making this application are:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="85" y="291" width="155" height="20" uuid="2147c3f3-c11a-4b6f-9261-5359a9e7fa96"/>
-				<textElement>
+				<reportElement x="151" y="216" width="209" height="20" uuid="4959454f-8941-4306-bff2-733836645a1c"/>
+				<textElement textAlignment="Right">
 					<font size="12" isBold="true" isItalic="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[previousCert]]></textFieldExpression>
+				<textFieldExpression><![CDATA[app1Name]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="216" width="138" height="20" uuid="c10f49be-c806-4306-a168-aaad22f9f4be"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[app1Title]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="236" width="138" height="20" uuid="c26b68ff-de72-492a-bb34-b0f9052dd777"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[app2Title]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="151" y="236" width="209" height="20" uuid="34402240-e098-4fdb-8372-9c8a4a9f774c"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[app2Name]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="242" y="291" width="313" height="20" uuid="4eff22de-3f45-4bee-9bf5-4e1f52d37d5d"/>
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[which is superseded by this certificate.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="0" y="324" width="555" height="35" uuid="2f74214b-8816-4e8d-89ce-c94423e65fb3"/>
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[This certificate records the following parties as having the ownership interest in this land shown alongside each name:]]></text>
-			</staticText>
-			<textField>
-				<reportElement x="51" y="359" width="100" height="20" uuid="c112bb4d-edb4-4414-bf10-d94dad32c332"/>
-				<textElement>
-					<font size="12" isBold="true" isItalic="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[o1Name]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="151" y="359" width="209" height="20" uuid="4959454f-8941-4306-bff2-733836645a1c"/>
-				<textElement textAlignment="Right">
-					<font size="12" isBold="true" isItalic="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[o1Title]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="360" y="359" width="138" height="20" uuid="c10f49be-c806-4306-a168-aaad22f9f4be"/>
-				<textElement textAlignment="Right">
-					<font size="12" isBold="true" isItalic="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[o1Address1]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="360" y="397" width="138" height="20" uuid="c26b68ff-de72-492a-bb34-b0f9052dd777"/>
-				<textElement textAlignment="Right">
-					<font size="12" isBold="true" isItalic="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[o2Address1]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="151" y="397" width="209" height="20" uuid="34402240-e098-4fdb-8372-9c8a4a9f774c"/>
-				<textElement textAlignment="Right">
-					<font size="12" isBold="true" isItalic="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[o2Title]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="51" y="397" width="100" height="20" uuid="54e1afce-7e07-48c8-8ea2-31e8d8e46fe6"/>
-				<textElement>
-					<font size="12" isBold="true" isItalic="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[o2Name]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="360" y="439" width="138" height="20" uuid="d0a3d5cf-eb47-439d-9a22-d10ffe7e4702"/>
-				<textElement textAlignment="Right">
-					<font size="12" isBold="true" isItalic="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[o3Address1]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="151" y="439" width="209" height="20" uuid="bc5ab0ab-702b-43e5-bee5-6d6b46df15e3"/>
-				<textElement textAlignment="Right">
-					<font size="12" isBold="true" isItalic="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[o3Title]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="51" y="439" width="100" height="20" uuid="4083e17f-3a9b-4817-aa22-73e401a8fbe6"/>
-				<textElement>
-					<font size="12" isBold="true" isItalic="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[o3Name]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="360" y="479" width="138" height="20" uuid="612d217d-8f2d-445b-a45e-9d333167ff02"/>
-				<textElement textAlignment="Right">
-					<font size="12" isBold="true" isItalic="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[o4Address1]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="151" y="479" width="209" height="20" uuid="bae3035b-ef72-4d42-b256-a6ed46a60289"/>
-				<textElement textAlignment="Right">
-					<font size="12" isBold="true" isItalic="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[o4Title]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="51" y="479" width="100" height="20" uuid="f29cd2e3-16a6-460e-a583-3133aa6c64e9"/>
-				<textElement>
-					<font size="12" isBold="true" isItalic="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[o4Name]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="360" y="379" width="138" height="20" uuid="0f18cd7b-38c8-46d7-b595-9afd6fb0401a"/>
-				<textElement textAlignment="Right">
-					<font size="12" isBold="true" isItalic="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[o1Address2]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="360" y="417" width="138" height="20" uuid="0913006e-bbc7-4ee9-9da4-82213531ff20"/>
-				<textElement textAlignment="Right">
-					<font size="12" isBold="true" isItalic="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[o2Address2]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="360" y="459" width="138" height="20" uuid="b4a07139-114a-4923-a914-6c51df6e60b2"/>
-				<textElement textAlignment="Right">
-					<font size="12" isBold="true" isItalic="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[o3Address2]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="360" y="499" width="138" height="20" uuid="47ef39de-ac93-4857-9b2e-c52ea1b925a1"/>
-				<textElement textAlignment="Right">
-					<font size="12" isBold="true" isItalic="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[o4Address2]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement x="360" y="114" width="75" height="20" uuid="6a4810c0-e49e-4929-8076-3dda4e41941b"/>
+				<reportElement x="342" y="76" width="64" height="20" uuid="6a4810c0-e49e-4929-8076-3dda4e41941b"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
 				<text><![CDATA[Island,]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="198" width="187" height="20" uuid="0d3cec82-e66b-4fac-b3f6-c200f3da35db"/>
+				<reportElement x="0" y="76" width="85" height="20" uuid="73bf67d2-3923-428a-af9f-1016a57080a4"/>
 				<textElement>
 					<font size="12"/>
 				</textElement>
-				<text><![CDATA[The land is described as follows:]]></text>
+				<text><![CDATA[(being part) of]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="56" width="167" height="20" uuid="7031e27e-6bc5-4018-a796-aaf01bec1337"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[that an application to register]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="167" y="56" width="157" height="20" uuid="e5d0f488-845c-409e-868d-c6f5347631be"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[landInterestType]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="324" y="56" width="100" height="20" uuid="a5a934b3-0c83-46c1-879c-041e10b0c5f4"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ Land interest in]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="151" y="276" width="209" height="20" uuid="b6b12bf4-037a-4328-8350-25434ab2c0fb"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[app4Name]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="151" y="256" width="209" height="20" uuid="cd9f2a12-9d0d-4cb5-87a2-4f40079c8a3a"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[app3Name]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="256" width="138" height="20" uuid="bb4e3b2a-6292-43ee-8c07-9927cef88f18"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[app3Title]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="276" width="138" height="20" uuid="f5e9690a-3c40-4df6-a762-7d4a18fcb2a0"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[app4Title]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="337" width="555" height="39" uuid="3374c1a3-5cdd-4380-9e8a-5e83c96cb66c"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[The full application is available for inspection at the office of the Land Registration Authority, MIDB Building, Floor 4 Room 406/407, Majuro during normal office hours.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="389" width="555" height="39" uuid="05708635-15fd-4be6-8de6-4e130a9d978d"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[If any person wants to object to this application on the grounds that he/she is the rightful holder of any interest described in the application, that person should file an objection with the Land Registration ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="428" width="95" height="19" uuid="57916412-ddcf-443b-a979-aebe592f45e1"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Authority before        ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="95" y="428" width="118" height="20" uuid="7a9a33bd-8da3-422f-9410-cf3855fe4174"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[objClosingDate]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="213" y="428" width="342" height="19" uuid="162a5cf5-a95e-4473-ac16-fc696af25a7d"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ which is the closing date for receiving objections.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="464" width="555" height="67" uuid="09e61a73-8e08-4388-9ee0-3dc356758067"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Section 27(2) of the Land Recording and Registration Act 2003 specifies that the following information must be filed with an objection: Name and address of each objector, statement of objection and reasons, copies of any documents supporting the objection and notarially attested signatures of each objector, certifying that all statements made in the objection are true.]]></text>
 			</staticText>
 		</band>
 	</detail>
 	<columnFooter>
-		<band height="95" splitType="Stretch">
+		<band height="58" splitType="Stretch">
 			<textField pattern="dd/MM/yyyy HH.mm.ss">
-				<reportElement x="251" y="37" width="204" height="20" uuid="7f11633e-becd-4fa9-889d-13a7d723b4bd"/>
-				<textElement>
+				<reportElement x="311" y="0" width="204" height="20" uuid="7f11633e-becd-4fa9-889d-13a7d723b4bd"/>
+				<textElement textAlignment="Right">
 					<font fontName="Tahoma" size="12" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="0" y="37" width="251" height="20" uuid="bd6496c5-3397-40f5-900f-0e18232ee486"/>
+				<reportElement x="0" y="0" width="311" height="20" uuid="bd6496c5-3397-40f5-900f-0e18232ee486"/>
 				<textElement>
 					<font fontName="Tahoma" size="12"/>
 				</textElement>
-				<text><![CDATA[Issued by the Land Registration Authority on]]></text>
+				<text><![CDATA[This notice is given by the Land Registration Authority on	noticeDate]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="0" width="555" height="37" uuid="3374c1a3-5cdd-4380-9e8a-5e83c96cb66c"/>
-				<textElement>
-					<font size="12"/>
-				</textElement>
-				<text><![CDATA[Section 30 of the Land Recording and Registration Act 2003 defines the quality of title described by this certificate.]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="416" y="75" width="61" height="20" uuid="5e3a177a-83e0-474c-9d22-c49f3ea91e72"/>
+				<reportElement x="374" y="38" width="61" height="20" uuid="5e3a177a-83e0-474c-9d22-c49f3ea91e72"/>
 				<textElement>
 					<font size="12" isBold="true"/>
 				</textElement>
